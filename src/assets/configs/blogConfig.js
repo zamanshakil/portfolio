@@ -19,7 +19,7 @@ const blogConfig = [
     description_i18n: {
       en: "Xiajun Jiang, Zhiyuan Li, Ryan Missel, Md Shakil Zaman, Brian Zenger, Wilson W Good, Rob S Macleod, John L Sapp, Linwei Wang — MICCAI, 2022.",
     },
-    links: [{ name: "arxiv", url: "https://arxiv.org/", icon: <ImBook/> }],
+    links: [{ name: "paper", url: "https://link.springer.com/chapter/10.1007/978-3-031-16452-1_5", icon: <ImBook/> }],
     date: "2022-03-01"
   },
   {
@@ -29,7 +29,7 @@ const blogConfig = [
     description_i18n: {
       en: "Md Shakil Zaman, Jwala Dhamala, Pradeep Bajracharya, John L Sapp, B Milan Horácek, Katherine C Wu, Natalia A Trayanova, Linwei Wang — Frontiers in Physiology, 2021.",
     },
-    links: [{ name: "arxiv", url: "https://arxiv.org/", icon: <ImBook/> }],
+    links: [{ name: "paper", url: "https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2021.740306/full", icon: <ImBook/> }],
     date: "2021-08-01"
   }
 ];
