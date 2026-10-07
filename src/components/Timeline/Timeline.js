@@ -31,7 +31,9 @@ const Timeline = ({ items = [], position = 'alternate' }) => {
       '& .MuiTimelineItem-root:before': { flex: 0, padding: 0 }, // remove default gutter line
     }}>
       {items.map((item) => {
-        const { id, date, icon, title, company, description, tags = [] } = item || {};
+        const { id, date, icon, title, company, description, tags = [], kind } = item || {};
+        const KIND = { work: 'Work', education: 'Education', both: 'Education & Work' };
+        const isEdu = kind === 'education';
 
         return (
           <TimelineItem key={id}>
@@ -60,7 +62,7 @@ const Timeline = ({ items = [], position = 'alternate' }) => {
               <TimelineDot
                 variant="outlined"
                 sx={(th) => ({
-                  borderColor: th.palette.secondary.main,
+                  borderColor: isEdu ? th.palette.info.main : th.palette.secondary.main,
                   backgroundColor: th.palette.background.paper,
                   width: 44,
                   height: 44,
@@ -70,7 +72,7 @@ const Timeline = ({ items = [], position = 'alternate' }) => {
                   boxShadow: '0 2px 8px rgba(0,0,0,.06)'
                 })}
               >
-                <Box sx={(th) => ({ fontSize: 22, color: th.palette.secondary.main })}>{icon}</Box>
+                <Box sx={(th) => ({ fontSize: 22, color: isEdu ? th.palette.info.main : th.palette.secondary.main })}>{icon}</Box>
               </TimelineDot>
               <TimelineConnector sx={(th) => ({ backgroundColor: th.palette.divider, width: 2 })} />
             </TimelineSeparator>
@@ -93,6 +95,11 @@ const Timeline = ({ items = [], position = 'alternate' }) => {
                 })}
               >
                 <Stack spacing={0.75}>
+                  {kind && KIND[kind] && (
+                    <Typography variant="overline" sx={(th) => ({ lineHeight: 1.2, fontWeight: 700, color: isEdu ? th.palette.info.main : 'text.secondary' })}>
+                      {KIND[kind]}
+                    </Typography>
+                  )}
                   <Typography variant="h6" sx={{ fontWeight: 800, letterSpacing: -0.2 }}>
                     {title}
                   </Typography>

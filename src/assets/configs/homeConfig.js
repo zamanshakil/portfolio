@@ -1,6 +1,6 @@
 import React from "react";
 import { BsClipboardData } from "react-icons/bs";
-import { FaFlask } from "react-icons/fa";
+import { FaFlask, FaGraduationCap, FaBriefcase } from "react-icons/fa";
 
 const greeting = (
   <h1 className="heading">
@@ -43,6 +43,7 @@ const homeConfig = {
   workTimeline: [
     {
       id: "work-1",
+      kind: "work",
       title: "Business Intelligence Analyst",
       title_i18n: { en: "Business Intelligence Analyst", es: "Business Intelligence Analyst" },
       company: "Paychex",
@@ -56,9 +57,10 @@ const homeConfig = {
     },
     {
       id: "work-0",
-      title: "Graduate Research Assistant",
-      title_i18n: { en: "Graduate Research Assistant", es: "Graduate Research Assistant" },
-      company: "Rochester Institute of Technology",
+      kind: "both",
+      title: "Ph.D. Studies & Graduate Research Assistant",
+      title_i18n: { en: "Ph.D. Studies & Graduate Research Assistant", es: "Ph.D. Studies & Graduate Research Assistant" },
+      company: "Rochester Institute of Technology (Ph.D. not completed)",
       description_i18n: {
         en: "Developed machine learning models (CNNs, VAEs) for cardiac diagnosis using ECG, MRI, and CT data; applied Bayesian optimization and active learning to reduce experimental trials and data labeling costs.",
         es: "Developed machine learning models (CNNs, VAEs) for cardiac diagnosis using ECG, MRI, and CT data; applied Bayesian optimization and active learning to reduce experimental trials and data labeling costs.",
@@ -66,6 +68,49 @@ const homeConfig = {
       date: "2019-2022",
       icon: <FaFlask />,
       tags: ["ml", "python", "pytorch", "bayesian", "research"],
+    },
+    {
+      id: "edu-2",
+      kind: "education",
+      title: "M.S. in Statistical Computing - Data Mining",
+      company: "University of Central Florida",
+      description:
+        "Moved from classical statistics into machine learning and computational statistics.",
+      date: "2017-2019",
+      icon: <FaGraduationCap />,
+      tags: ["data mining", "statistical computing", "ml"],
+    },
+    {
+      id: "work--1",
+      kind: "work",
+      title: "Statistical Analyst",
+      company: "Meridian Finance, Dhaka",
+      description:
+        "Market research and statistical analysis (time series, correlation, causal analysis) for clients applying for loans at a non-bank financial institution.",
+      date: "2016-2017",
+      icon: <FaBriefcase />,
+      tags: ["statistics", "time series", "causal analysis"],
+    },
+    {
+      id: "edu-1",
+      kind: "education",
+      title: "MBA in Finance",
+      company: "University of Dhaka",
+      description: "Business and finance foundation alongside a quantitative background.",
+      date: "2014-2016",
+      icon: <FaGraduationCap />,
+      tags: ["finance", "business"],
+    },
+    {
+      id: "edu-0",
+      kind: "education",
+      title: "B.S. in Applied Statistics",
+      company: "University of Dhaka",
+      description:
+        "Foundation in statistical methods, time series, and causal analysis.",
+      date: "2010-2014",
+      icon: <FaGraduationCap />,
+      tags: ["statistics", "time series"],
     },
   ],
 };
