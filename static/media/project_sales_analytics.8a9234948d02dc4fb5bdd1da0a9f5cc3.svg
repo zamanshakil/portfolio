@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675">
+  <defs>
+    <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B1220"/>
+      <stop offset="100%" stop-color="#0E2A38"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#g1)"/>
+  <circle cx="1080" cy="80" r="220" fill="#06B6D4" opacity="0.12"/>
+  <g fill="none" stroke="#06B6D4" stroke-width="6" opacity="0.6">
+    <polyline points="140,480 280,380 420,430 560,300 700,340 840,220 980,260" />
+  </g>
+  <g fill="#06B6D4" opacity="0.9">
+    <circle cx="140" cy="480" r="7"/>
+    <circle cx="280" cy="380" r="7"/>
+    <circle cx="420" cy="430" r="7"/>
+    <circle cx="560" cy="300" r="7"/>
+    <circle cx="700" cy="340" r="7"/>
+    <circle cx="840" cy="220" r="7"/>
+    <circle cx="980" cy="260" r="7"/>
+  </g>
+  <text x="140" y="580" font-family="Inter, Arial, sans-serif" font-size="46" font-weight="800" fill="#F7FAFC">Enterprise Sales &amp; Financial</text>
+  <text x="140" y="630" font-family="Inter, Arial, sans-serif" font-size="46" font-weight="800" fill="#F7FAFC">Analytics Platform</text>
+</svg>

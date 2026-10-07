@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675">
+  <defs>
+    <linearGradient id="g3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B1220"/>
+      <stop offset="100%" stop-color="#0E2A38"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#g3)"/>
+  <circle cx="1000" cy="520" r="240" fill="#06B6D4" opacity="0.10"/>
+  <g fill="none" stroke="#06B6D4" stroke-width="5" opacity="0.7">
+    <path d="M600 200 L660 230 L660 290 L600 320 L540 290 L540 230 Z"/>
+    <path d="M600 320 L600 420"/>
+    <path d="M460 470 L740 470"/>
+    <circle cx="460" cy="470" r="14"/>
+    <circle cx="600" cy="470" r="14"/>
+    <circle cx="740" cy="470" r="14"/>
+  </g>
+  <text x="140" y="580" font-family="Inter, Arial, sans-serif" font-size="50" font-weight="800" fill="#F7FAFC">Snowflake Cloud</text>
+  <text x="140" y="630" font-family="Inter, Arial, sans-serif" font-size="50" font-weight="800" fill="#F7FAFC">Data Platform</text>
+</svg>

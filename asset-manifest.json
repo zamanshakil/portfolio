@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.js": "/static/js/main.8eb6385d.js",
+    "static/media/project_anomaly_detection.svg": "/static/media/project_anomaly_detection.a69652b08c311ea06187c9cdc0712968.svg",
+    "static/media/project_sales_analytics.svg": "/static/media/project_sales_analytics.8a9234948d02dc4fb5bdd1da0a9f5cc3.svg",
+    "index.html": "/index.html",
+    "static/media/project_snowflake_etl.svg": "/static/media/project_snowflake_etl.44a73b4df0b28df31601a84c34afd77c.svg",
+    "static/media/project_snowflake_platform.svg": "/static/media/project_snowflake_platform.ea29f2253912fc7bad1adcaccb4e3632.svg"
+  },
+  "entrypoints": [
+    "static/js/main.8eb6385d.js"
+  ]
+}
