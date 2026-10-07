@@ -25,7 +25,7 @@ export default function Home() {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Person',
-    name: 'Rodrigo Arenas',
+    name: 'Shakil Zaman',
     url: canonical,
     jobTitle: titles?.[0] || 'Data Scientist',
   };
@@ -37,12 +37,8 @@ export default function Home() {
   return (
     <section>
       <Seo
-        title={lang === 'es' ? 'Rodrigo Arenas — Científico de Datos & Consultor' : 'Rodrigo Arenas — Data Scientist & Consultant'}
-        description={
-          lang === 'es'
-            ? 'Consultoría en ML y datos: LLMs, RAG, AutoML, analítica en Azure. Proyectos, artículos y experiencia.'
-            : 'ML & data consulting: LLMs, RAG, AutoML, analytics on Azure. Selected projects, writing, and experience.'
-        }
+        title="Shakil Zaman — Data Scientist & BI/ML Engineer"
+        description="Data professional spanning machine learning research, data engineering, and business intelligence. Selected projects, publications, and experience."
         canonical={canonical}
         jsonLd={jsonLd}
       />

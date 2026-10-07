@@ -8,33 +8,33 @@ import { withUtm } from '../utils/withUtm';
 
 const UI = {
   en: {
-    h1_a: 'Ship ',
-    h1_b: 'Production ML ',
-    h1_c: 'Faster',
-    sub: 'I design and deploy ML that moves KPIs: LLM assistants, RAG search, AutoML pipelines, and analytics on Azure — from prototype to production.',
+    h1_a: 'Turning ',
+    h1_b: 'Data into Decisions ',
+    h1_c: 'at Scale',
+    sub: 'I build BI dashboards, data pipelines, and ML models — from Power BI and Snowflake to deep learning research in healthcare — turning raw data into insights that ship.',
     bullets: [
-      { icon: <RocketLaunchIcon />, label: 'Weeks, not quarters' },
-      { icon: <AutoAwesomeIcon />, label: 'LLMs, RAG, AutoML' },
-      { icon: <SecurityIcon />, label: 'Battle‑tested in production' },
+      { icon: <RocketLaunchIcon />, label: '5+ Years in Data & ML' },
+      { icon: <AutoAwesomeIcon />, label: 'Power BI, Snowflake, Python' },
+      { icon: <SecurityIcon />, label: 'Published ML Researcher' },
     ],
-    ctaPrimary: 'Book a Free Intro Call',
+    ctaPrimary: 'Get in Touch',
     ctaSecondary: 'See Projects',
-    subject: 'Consulting Inquiry',
+    subject: 'Portfolio Inquiry',
     seenIn: 'Experience at',
   },
   es: {
-    h1_a: 'Lleva ',
-    h1_b: 'ML a producción ',
-    h1_c: 'más rápido',
-    sub: 'Diseño e implemento ML que mueve KPIs: asistentes con LLMs, búsqueda RAG, pipelines de AutoML y analítica en Azure — del prototipo a producción.',
+    h1_a: 'Turning ',
+    h1_b: 'Data into Decisions ',
+    h1_c: 'at Scale',
+    sub: 'I build BI dashboards, data pipelines, and ML models — from Power BI and Snowflake to deep learning research in healthcare — turning raw data into insights that ship.',
     bullets: [
-      { icon: <RocketLaunchIcon />, label: 'Semanas, no trimestres' },
-      { icon: <AutoAwesomeIcon />, label: 'LLMs, RAG, AutoML' },
-      { icon: <SecurityIcon />, label: 'Probado en producción' },
+      { icon: <RocketLaunchIcon />, label: '5+ Years in Data & ML' },
+      { icon: <AutoAwesomeIcon />, label: 'Power BI, Snowflake, Python' },
+      { icon: <SecurityIcon />, label: 'Published ML Researcher' },
     ],
-    ctaPrimary: 'Agendar llamada',
-    ctaSecondary: 'Ver proyectos',
-    subject: 'Consulta de consultoría',
+    ctaPrimary: 'Get in Touch',
+    ctaSecondary: 'See Projects',
+    subject: 'Portfolio Inquiry',
     seenIn: 'Experiencia en',
   },
 };
@@ -42,7 +42,7 @@ const UI = {
 export default function Hero() {
   const [lang] = useLang();
   const t = UI[lang] || UI.en;
-  const EMAIL = process.env.EMAIL || '';
+  const EMAIL = process.env.REACT_APP_EMAIL || '';
   const mailHref = EMAIL
     ? withUtm(`mailto:${EMAIL}?subject=${encodeURIComponent(t.subject)}`, 'hero_cta')
     : '#';

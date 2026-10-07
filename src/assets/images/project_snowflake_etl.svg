@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675">
+  <defs>
+    <linearGradient id="g2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B1220"/>
+      <stop offset="100%" stop-color="#0E2A38"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#g2)"/>
+  <circle cx="120" cy="560" r="260" fill="#06B6D4" opacity="0.10"/>
+  <g fill="none" stroke="#06B6D4" stroke-width="5" opacity="0.7">
+    <rect x="160" y="260" width="160" height="90" rx="12"/>
+    <rect x="520" y="260" width="160" height="90" rx="12"/>
+    <rect x="880" y="260" width="160" height="90" rx="12"/>
+    <line x1="320" y1="305" x2="520" y2="305"/>
+    <line x1="680" y1="305" x2="880" y2="305"/>
+  </g>
+  <text x="140" y="580" font-family="Inter, Arial, sans-serif" font-size="50" font-weight="800" fill="#F7FAFC">Snowflake ETL</text>
+  <text x="140" y="630" font-family="Inter, Arial, sans-serif" font-size="50" font-weight="800" fill="#F7FAFC">Data Pipeline</text>
+</svg>

@@ -1,81 +1,67 @@
-import { BiGitRepoForked } from "react-icons/bi";
-import { AiFillGithub, AiFillEye } from "react-icons/ai";
-import { ImBook } from "react-icons/im";
+import { AiFillGithub } from "react-icons/ai";
 
-import sklearnGenetic from "../images/sklearn_genetic_opt.png";
-import kafkaMl from "../images/kafkaml.png";
-import portfolio from "../images/portfolio.png";
+import salesAnalytics from "../images/project_sales_analytics.svg";
+import snowflakeEtl from "../images/project_snowflake_etl.svg";
+import snowflakePlatform from "../images/project_snowflake_platform.svg";
+import anomalyDetection from "../images/project_anomaly_detection.svg";
 
 import React from 'react';
 
+const GITHUB_PROFILE = "https://github.com/zamanshakil";
+
 const projectConfig = [
   {
-    id: "project-5",
-    title: "Sklearn Genetic Opt",
-    category: { en: "Library", es: "Librería" },
+    id: "project-4",
+    title: "Access Log Anomaly Detection & AI Investigation System",
+    category: { en: "Machine Learning" },
     description_i18n: {
-      en: "Hyperparameter tuning & feature selection for scikit‑learn using evolutionary algorithms.",
-      es: "Ajuste de hiperparámetros y selección de variables para scikit‑learn con algoritmos evolutivos."
+      en: "End-to-end analytical system that detects anomalous access behavior using Isolation Forest and behavioral feature engineering, with an LLM-based explanation layer and a Streamlit dashboard for investigating anomalies.",
     },
     links: [
-      { name: "repo", url: "https://github.com/rodrigo-arenas/Sklearn-genetic-opt", icon: <AiFillGithub/> },
-      { name: "fork", url: "https://github.com/rodrigo-arenas/Sklearn-genetic-opt/fork", icon: <BiGitRepoForked/> },
-      { name: "subscription", url: "https://github.com/rodrigo-arenas/Sklearn-genetic-opt/subscription", icon: <AiFillEye/> },
-      { name: "docs", url: "https://sklearn-genetic-opt.readthedocs.io/en/stable/", icon: <ImBook/> }
+      { name: "github", url: GITHUB_PROFILE, icon: <AiFillGithub/> }
     ],
-    image: sklearnGenetic,
+    image: anomalyDetection,
     target: "_blank"
   },
   {
     id: "project-3",
-    title: "Kafkaml Anomalies",
-    category: { en: "System", es: "Sistema" },
+    title: "Snowflake Cloud Data Platform",
+    category: { en: "Data Engineering" },
     description_i18n: {
-      en: "Real‑time anomaly detection on Kafka streams with Python.",
-      es: "Detección de anomalías en tiempo real sobre flujos de Kafka con Python."
+      en: "Architected and deployed a cloud-based data platform using Snowflake as the central warehouse, with automated ETL via Snowflake tasks, streams, and stored procedures, integrated with Power BI for real-time analytics.",
     },
     links: [
-      { name: "repo", url: "https://github.com/rodrigo-arenas/kafkaml-anomaly-detection", icon: <AiFillGithub/> },
-      { name: "fork", url: "https://github.com/rodrigo-arenas/kafkaml-anomaly-detection/fork", icon: <BiGitRepoForked/> },
-      { name: "subscription", url: "https://github.com/rodrigo-arenas/kafkaml-anomaly-detection/subscription", icon: <AiFillEye/> }
+      { name: "github", url: GITHUB_PROFILE, icon: <AiFillGithub/> }
     ],
-    image: kafkaMl,
+    image: snowflakePlatform,
     target: "_blank"
   },
   {
     id: "project-2",
-    title: "Pyworkforce",
-    category: { en: "Library", es: "Librería" },
+    title: "Snowflake ETL Data Pipeline",
+    category: { en: "Data Engineering" },
     description_i18n: {
-      en: "Standard tools for WFM: queuing, scheduling, rostering, and optimization.",
-      es: "Herramientas estándar para WFM: colas, programación, turnos y optimización."
+      en: "End-to-end ETL pipeline using Python (Pandas, Snowflake Connector) to extract and transform data from multiple sources, with data validation, star-schema modeling, and automated, version-controlled workflows.",
     },
     links: [
-      { name: "repo", url: "https://github.com/rodrigo-arenas/pyworkforce", icon: <AiFillGithub/> },
-      { name: "fork", url: "https://github.com/rodrigo-arenas/pyworkforce/fork", icon: <BiGitRepoForked/> },
-      { name: "subscription", url: "https://github.com/rodrigo-arenas/pyworkforce/subscription", icon: <AiFillEye/> },
-      { name: "docs", url: "https://pyworkforce.readthedocs.io/en/stable/", icon: <ImBook/> }
+      { name: "github", url: GITHUB_PROFILE, icon: <AiFillGithub/> }
     ],
-    image: "https://miro.medium.com/max/1400/1*UDnhOFK35IbAPx15wkMgVg.jpeg",
+    image: snowflakeEtl,
     target: "_blank"
   },
   {
     id: "project-1",
-    title: "Portfolio Web",
-    category: { en: "Website", es: "Sitio web" },
+    title: "Enterprise Sales & Financial Analytics Platform",
+    category: { en: "Business Intelligence" },
     description_i18n: {
-      en: "Source code for my personal portfolio website.",
-      es: "Código fuente de mi sitio web personal de portafolio."
+      en: "End-to-end analytics solution integrating multi-source CRM, financial, and operational data, with a scalable star-schema model and interactive Power BI dashboards featuring advanced DAX measures and drill-through.",
     },
     links: [
-      { name: "repo", url: "https://github.com/rodrigo-arenas/portfolio", icon: <AiFillGithub/> },
-      { name: "fork", url: "https://github.com/rodrigo-arenas/portfolio/fork", icon: <BiGitRepoForked/> },
-      { name: "subscription", url: "https://github.com/rodrigo-arenas/portfolio/subscription", icon: <AiFillEye/> }
+      { name: "github", url: GITHUB_PROFILE, icon: <AiFillGithub/> }
     ],
-    image: portfolio,
+    image: salesAnalytics,
     target: "_blank"
   }
 ];
 
 export default projectConfig;
-

@@ -27,8 +27,8 @@ import { useLang } from '../utils/i18n';
 
 const UI = {
   en: {
-    seoTitle: 'Projects | Rodrigo Arenas',
-    seoDesc: 'Open-source libraries, systems, and real-world projects by Rodrigo Arenas.',
+    seoTitle: 'Projects | Shakil Zaman',
+    seoDesc: 'BI dashboards, data pipelines, and ML systems built by Shakil Zaman.',
     overline: 'Selected Work',
     title: 'Projects',
     desc:
@@ -39,8 +39,8 @@ const UI = {
     ctaView: 'View',
   },
   es: {
-    seoTitle: 'Proyectos | Rodrigo Arenas',
-    seoDesc: 'Librerías open-source, sistemas y proyectos reales de Rodrigo Arenas.',
+    seoTitle: 'Proyectos | Shakil Zaman',
+    seoDesc: 'Dashboards de BI, pipelines de datos y sistemas de ML construidos por Shakil Zaman.',
     overline: 'Trabajo destacado',
     title: 'Proyectos',
     desc:

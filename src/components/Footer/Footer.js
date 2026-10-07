@@ -6,18 +6,18 @@ import { withUtm } from '../../utils/withUtm';
 
 const COPY = {
   en: {
-    headline: "Let’s build something that ships",
-    sub: "Strategy, prototypes, and production ML in weeks — not quarters.",
-    cta: "Book a Call",
+    headline: "Let's build something with data",
+    sub: "Open to BI, data engineering, and machine learning opportunities.",
+    cta: "Get in Touch",
     projects: "View Projects",
-    subject: "Consulting Inquiry",
+    subject: "Portfolio Inquiry",
   },
   es: {
-    headline: "Construyamos algo que salga a producción",
-    sub: "Estrategia, prototipos y ML en producción en semanas — no trimestres.",
-    cta: "Agendar llamada",
-    projects: "Ver proyectos",
-    subject: "Consulta de consultoría",
+    headline: "Let's build something with data",
+    sub: "Open to BI, data engineering, and machine learning opportunities.",
+    cta: "Get in Touch",
+    projects: "View Projects",
+    subject: "Portfolio Inquiry",
   },
 };
 
@@ -26,7 +26,7 @@ export default function Footer() {
   const t = COPY[lang] || COPY.en;
 
 
-  const EMAIL = process.env.EMAIL || '';
+  const EMAIL = process.env.REACT_APP_EMAIL || '';
 
   const emailHref = useMemo(() => {
     const subject = encodeURIComponent(t.subject);
@@ -62,7 +62,7 @@ export default function Footer() {
         </Stack>
         <FooterItems />
         <Typography variant="caption" sx={{ display: 'block', mt: 2, opacity: 0.75 }}>
-          © {new Date().getFullYear()} Rodrigo Arenas
+          © {new Date().getFullYear()} Shakil Zaman
         </Typography>
       </Container>
     </Box>

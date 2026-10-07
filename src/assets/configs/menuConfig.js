@@ -22,8 +22,8 @@ const menuConfig = {
     },
     {
       id: "menu-2",
-      title: "Blogs",
-      title_i18n: { en: "Blogs", es: "Blog" },
+      title: "Publications",
+      title_i18n: { en: "Publications", es: "Publications" },
       path: "/blogs",
       icon: <BsMedium size={35} />,
       className: "nav-text",

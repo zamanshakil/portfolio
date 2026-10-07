@@ -27,37 +27,37 @@ import { useLang } from '../utils/i18n';
 
 const UI = {
   en: {
-    seoTitle: 'Writing & Insights — Rodrigo Arenas',
-    seoDesc: 'Notes, articles, and insights on data science, ML, and entrepreneurship.',
-    overline: 'Blog',
-    title: 'Writing & Insights',
-    desc: 'Deep dives and quick notes on ML, data systems, and building products.',
-    searchPlaceholder: 'Search posts',
+    seoTitle: 'Publications — Shakil Zaman',
+    seoDesc: 'Peer-reviewed research publications by Shakil Zaman on machine learning for healthcare.',
+    overline: 'Research',
+    title: 'Publications',
+    desc: 'Peer-reviewed papers on Bayesian optimization, active learning, and deep learning for healthcare.',
+    searchPlaceholder: 'Search publications',
     sortRecent: 'Most Recent',
     sortAZ: 'Title (A → Z)',
     ctaRead: 'Read',
     featured: 'Featured',
-    stripQ: 'Looking to ship ML to production?',
+    stripQ: 'Interested in collaborating on a data or ML project?',
     stripSee: 'See projects',
     stripTalk: "Let's talk",
     new: 'New',
     mins: (m) => `${m} min`,
   },
   es: {
-    seoTitle: 'Escritura & Notas — Rodrigo Arenas',
-    seoDesc: 'Notas, artículos e ideas sobre ciencia de datos, ML y emprendimiento.',
-    overline: 'Blog',
-    title: 'Artículos y notas',
-    desc: 'Análisis profundos y notas rápidas sobre ML, sistemas de datos y creación de productos.',
-    searchPlaceholder: 'Buscar artículos',
-    sortRecent: 'Más recientes',
-    sortAZ: 'Título (A → Z)',
-    ctaRead: 'Leer',
-    featured: 'Destacados',
-    stripQ: '¿Buscas implementar ML en producción?',
-    stripSee: 'Ver proyectos',
-    stripTalk: 'Hablemos',
-    new: 'Nuevo',
+    seoTitle: 'Publications — Shakil Zaman',
+    seoDesc: 'Peer-reviewed research publications by Shakil Zaman on machine learning for healthcare.',
+    overline: 'Research',
+    title: 'Publications',
+    desc: 'Peer-reviewed papers on Bayesian optimization, active learning, and deep learning for healthcare.',
+    searchPlaceholder: 'Search publications',
+    sortRecent: 'Most Recent',
+    sortAZ: 'Title (A → Z)',
+    ctaRead: 'Read',
+    featured: 'Featured',
+    stripQ: 'Interested in collaborating on a data or ML project?',
+    stripSee: 'See projects',
+    stripTalk: "Let's talk",
+    new: 'New',
     mins: (m) => `${m} min`,
   },
 };
@@ -161,7 +161,7 @@ export default function Blogs() {
   const t = UI[lang];
 
   const canonical = typeof window !== 'undefined' ? window.location.href : undefined;
-  const EMAIL = process.env.EMAIL || '';
+  const EMAIL = process.env.REACT_APP_EMAIL || '';
 
   const categories = useMemo(() => {
     const set = new Set(['All']);
